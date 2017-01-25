@@ -1,7 +1,7 @@
 /* Empty. Add your own CSS if you like */
 
 .subtitles {
-  color: orange;
+  color: #6699ff;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -20,5 +20,8 @@
 .iconDecouvrirPrincipale {
   margin-left: 40%;
   width: 20%;
-
 }
+
+ .listCars {
+   background-color: blue;
+ }

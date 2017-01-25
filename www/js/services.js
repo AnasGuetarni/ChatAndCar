@@ -47,4 +47,37 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+.factory('Cars', function() {
+  // Might use a resource here that returns a JSON array
+
+  var cars = [{
+    id: 0,
+    name: 'Ben Sparrow',
+    lastText: 'You on your way?',
+    face: 'img/car1.png'
+  }, {
+    id: 1,
+    name: 'Max Lynx',
+    lastText: 'Hey, it\'s me',
+    face: 'img/car2.png'
+  }];
+
+  return {
+    all: function() {
+      return cars;
+    },/*
+    remove: function(car) {
+      cars.splice(cars.indexOf(car), 1);
+    },*/
+    get: function(carId) {
+      for (var i = 0; i < cars.length; i++) {
+        if (cars[i].id === parseInt(carId)) {
+          return cars[i];
+        }
+      }
+      return null;
+    }
+  };
 });

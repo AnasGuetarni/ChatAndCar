@@ -1,0 +1,13 @@
+<ion-view view-title="Voitures">
+ <ion-content class="padding">
+   <h2 class="subtitles">Chat&Car</h2>
+   <img src="img/car.svg" class="iconDecouvrirPrincipale"/>
+   <ion-list>
+     <ion-item class="item-remove-animate item-avatar item-icon-right listCars" ng-repeat="car in cars" type="item-text-wrap" href="#/tab/cars/{{car.id}}">
+       <img ng-src="{{car.face}}">
+       <h2>{{car.name}}</h2>
+       <p>{{car.lastText}}</p>
+       <i class="icon ion-chevron-right icon-accessory"></i>
+     </ion-item>
+   </ion-list>
+ </ion-content>
