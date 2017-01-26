@@ -67,10 +67,10 @@ angular.module('starter.services', [])
   return {
     all: function() {
       return cars;
-    },/*
+    },
     remove: function(car) {
       cars.splice(cars.indexOf(car), 1);
-    },*/
+    },
     get: function(carId) {
       for (var i = 0; i < cars.length; i++) {
         if (cars[i].id === parseInt(carId)) {

@@ -4,9 +4,9 @@ angular.module('starter.controllers', [])
 
 .controller('CarsCtrl', function($scope, Cars) {
   $scope.cars = Cars.all();
-/*  $scope.remove = function(car) {
-    Chats.remove(car);
-  };*/
+  $scope.remove = function(car) {
+    Cars.remove(car);
+  };
 })
 
 .controller('CarDetailCtrl', function($scope, $stateParams, Cars) {
